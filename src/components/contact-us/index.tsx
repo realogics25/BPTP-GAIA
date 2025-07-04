@@ -86,12 +86,12 @@ const ContactUs = ({
                 </h5>
                 <div className="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-16">
                     <div>
-                        <h2 className="mb-4 text-2xl font-bold text-textPrimary text-center">Fill the form to download brochure</h2>
+                        <h2 className="mb-4 text-2xl font-bold text-textPrimary text-center">Fill this form to Proceed.</h2>
                         <form id="contactForm" onSubmit={onSubmit} ref={formRef}>
                             <div className="mb-6 space-y-5">
                                 {/* Interest Dropdown */}
                                 <div>
-                                    <label className="font-medium mb-1 block">Are you interested in BPTP Amstoria Verti Greens?</label>
+                                    <label className="font-medium mb-1 block">Are you interested in BPTP GAIA?</label>
                                     <select name="interest" required className="w-full border border-gray-400 rounded-md py-2 px-3">
                                         <option value="">Select an option</option>
                                         <option value="Yes">Yes</option>
@@ -105,9 +105,8 @@ const ContactUs = ({
                                     <label className="font-medium mb-1 block">What type of apartment are you looking for?</label>
                                     <select name="apartment" required className="w-full border border-gray-400 rounded-md py-2 px-3">
                                         <option value="">Select apartment type</option>
-                                        <option value="2 BHK 1652 Sq. Ft.">2 BHK 1652 Sq. Ft.</option>
-                                        <option value="3 BHK 2460 Sq. Ft.">3 BHK 2460 Sq. Ft.</option>
-                                        <option value="3 BHK 2050 Sq. Ft.">3 BHK 2050 Sq. Ft.</option>
+                                        <option value="2 BHK 1652 Sq. Ft.">Type-1 | 1689.74 Sq.ft | 3 BHK </option>
+                                        <option value="3 BHK 2460 Sq. Ft.">Type-2 | 1621.67 Sq.ft | 3 BHK  </option>
                                     </select>
                                 </div>
 
