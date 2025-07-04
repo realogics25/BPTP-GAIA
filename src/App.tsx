@@ -74,9 +74,9 @@ export const ContactForm = ({
 
   return (
     <form onSubmit={onSubmit} ref={formRef} className="space-y-4 w-full">
-      <h2 className="text-xl font-semibold text-center">Fill the form to download brochure</h2>
+      <h2 className="text-xl font-semibold text-center">Fill the form to Proceed.</h2>
       <div>
-        <label className="block font-medium mb-1">Are you interested in BPTP Amstoria Verti Greens?</label>
+        <label className="block font-medium mb-1">Are you interested in BPTP GAIA??</label>
         <select name="interest" required className="w-full border border-gray-400 rounded-md py-2 px-3">
           <option value="">Select an option</option>
           <option value="Yes">Yes</option>
@@ -88,9 +88,8 @@ export const ContactForm = ({
         <label className="block font-medium mb-1">What type of apartment are you looking for?</label>
         <select name="apartment" required className="w-full border border-gray-400 rounded-md py-2 px-3">
           <option value="">Select apartment type</option>
-          <option value="2 BHK 1652 Sq. Ft.">2 BHK 1652 Sq. Ft.</option>
-          <option value="3 BHK 2460 Sq. Ft.">3 BHK 2460 Sq. Ft.</option>
-          <option value="3 BHK 2050 Sq. Ft.">3 BHK 2050 Sq. Ft.</option>
+          <option value="2 BHK 1652 Sq. Ft.">Type-1 | 1689.74 Sq.ft | 3 BHK</option>
+          <option value="3 BHK 2460 Sq. Ft.">Type-2 | 1621.67 Sq.ft | 3 BHK</option>          
         </select>
       </div>
       <div>
