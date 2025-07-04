@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import './mobileNav.css';
-import logo from '/bptp.webp';
+import logo from '/bptp-logo.png';
 
 // @ts-ignore
 const MobileNavbar = ({ isOpen, toggleMenu }) => {

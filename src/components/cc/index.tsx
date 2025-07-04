@@ -21,6 +21,11 @@ import img11 from '/img-11.jpg';
 import img12 from '/img-12.jpg';
 
 const featuresList = [
+    { image: 'https://www.bptpgaia.com/Yoga-Sky.jpg', title: 'Yoga Deck 400ft' },
+    { image: 'https://www.bptpgaia.com/Library-Lounge.jpg', title: 'Library 300ft' },
+    { image: 'https://www.bptpgaia.com/Co-working.jpg', title: 'Co-Working Lounge 200ft' },
+    { image: 'https://www.bptpgaia.com/Bowling-Alley.jpg', title: 'Bowling Alley Arcade' },
+    { image: 'https://www.bptpgaia.com/Hammam.jpg', title: 'Turkish Hammam' },
     { image: img1, title: 'Fine Dining Restaurant' },
     { image: img2, title: 'Swimming Pools' },
     { image: img3, title: 'Cigar Lounge' },

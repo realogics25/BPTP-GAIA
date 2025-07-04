@@ -40,10 +40,10 @@ const AboutUs = ({
       {/* Content */}
       <div className="relative z-10 rounded-2xl mx-auto flex flex-col gap-y-5 justify-center items-center">
         <h3 className="text-3xl md:text-4xl lg:text-5xl max-w-xl lg:max-w-3xl mx-auto font-bold text-white text-center">
-          Lutyens’ charm reimagined along Dwarka Expressway
+          Luxury finds its natural rhythm
         </h3>
         <p className="text-sm md:text-md text-white max-w-lg mx-auto text-center">
-          Nestled in Sector 102 along the thriving Dwarka Expressway, Amstoria Verti-Greens offers seamless connectivity to Delhi and Gurugram, ensuring effortless access to life’s finest luxuries while reclaiming precious time.
+          In a world that moves fast, GAIA Residences invites you to slow down. Discover a sanctuary where architectural brilliance, lush nature, and wellness-focused living come together to create something rare, a home that breathes with you.
         </p>
         <Button
           //@ts-ignore

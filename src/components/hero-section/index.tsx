@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import image from '/Vertigreens-New-Banner-1.jpg';
 import { MdCancel } from 'react-icons/md';
 import { ContactForm } from '../../App';
 
@@ -32,16 +31,20 @@ const HeroSection = ({
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-1">
         <div className="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-16">
           <div className="text-center lg:text-left flex flex-col justify-center items-center">
+            <h1 className='font-medium text-xl italic text-yellow-600'>First Residential Glass Façade Towers</h1>
             <h1 className="text-5xl font-bold leading-tight text-primary sm:text-6xl sm:leading-tight lg:leading-20 lg:text-[80px] text-center">
-              BPTP Amstoria <br /> Verti-Greens
+              BPTP GAIA
             </h1>
             <div className='border-y-2 my-4 py-2'>
-              <p className='text-center text-2xl font-medium'>2 & 3 BHK Residences Prices Starting at</p>
-              <p className='text-center text-4xl font-semibold'>₹3.22 Crores*</p>
+              <p className='text-center text-2xl font-medium'><span className='text-yellow-600'>3 BHK</span> Luxury Residences Starting at</p>
+              <p className='text-center text-4xl font-semibold'>₹3.85 Cr*</p>
             </div>
             <p className='text-center text-xl font-medium'>SECTOR 102, DWARKA EXPRESSWAY, GURUGRAM</p>
             <div className='border text-center inline-block my-2 p-3 rounded-md'>
-              <p className='text-center text-xl font-medium'>Pay 20% Every Year For 5 Years</p>
+              <p className='text-center text-xl font-medium'>Easy Payment Plan <span className='text-yellow-600'>30:30:40</span></p>
+            </div>
+            <div className='border text-center inline-block my-2 p-3 rounded-md'>
+              <p className='text-center text-xl font-medium'>Pay 30% Now & No Payments Till <span className='text-yellow-600'>3.5 Years</span></p>
             </div>
             <div className='flex justify-center items-center gap-4 mt-2'>
               <div
@@ -58,11 +61,26 @@ const HeroSection = ({
             </div>
           </div>
           <div>
-            <img
+            {/* <img
               className="w-full h-[20rem] md:h-[30rem] object-cover rounded-2xl"
               src={image}
               alt=""
-            />
+            /> */}
+            <video
+              playsInline
+              autoPlay
+              loop
+              muted
+              controls={false}
+              className="w-full h-[20rem] md:h-[30rem] object-cover rounded-2xl"
+              poster="https://cms.bptp.com/wp-content/uploads/2025/06/GAIA-Residences-Mobile-banner.png"
+            >
+              <source
+                src="https://cms.bptp.com/wp-content/uploads/2025/07/GAIA-landing-page-Mobile-375x340-1.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>

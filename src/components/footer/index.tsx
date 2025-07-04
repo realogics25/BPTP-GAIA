@@ -84,7 +84,7 @@ export const Footer = () => {
                                 title="Our phone"
                                 className="transition-colors duration-300 text-white/80"
                             >
-                                +919999221307
+                                +91 9999221307
                             </a>
                         </div>
                         <div className="flex">

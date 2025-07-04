@@ -49,8 +49,8 @@ const ContactUs = ({
                 });
 
                 const link = document.createElement("a");
-                link.href = "/Amstoria Verti-Greens Brochure.pdf";
-                link.download = "Amstoria Verti-Greens Brochure.pdf";
+                link.href = "/BPTP GAIA RESIDENCES @ AMSTORIA 102.pdf";
+                link.download = "BPTP GAIA RESIDENCES @ AMSTORIA 102.pdf";
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);

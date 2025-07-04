@@ -1,5 +1,5 @@
 import './navbar.css';
-import logo from '/bptp.webp';
+import logo from '/bptp-logo.png';
 import { IoMenu, IoClose } from "react-icons/io5";
 import { useState } from 'react';
 import MobileNavbar from '../mobile-navbar/MobileNavbar';
@@ -79,7 +79,7 @@ const Navbar = () => {
                         <div className={`contact-button-nav border-2 border-black py-2 px-3 rounded-md cursor-pointer bg-white text-black flex items-center gap-2`}
                         >
                             <FaPhoneAlt />
-                            <p className="text-md font-normal">+919999221307</p>
+                            <p className="text-md font-normal">+91 9999221307</p>
                         </div>
                     </a>
 

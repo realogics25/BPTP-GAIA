@@ -22,9 +22,9 @@ const SitePlan = () => {
 
             <div className="w-full bg-white py-4 mt-4 rounded-2xl">
                 <img
-                    src="https://lp.bptp.com/AmstoriaVertiGreens.webp"
+                    src="https://www.bptpgaia.com/Site-plan-Gaia.webp"
                     alt=""
-                    onClick={() => openImage("https://lp.bptp.com/AmstoriaVertiGreens.webp")}
+                    onClick={() => openImage("https://www.bptpgaia.com/Site-plan-Gaia.webp")}
                     className="w-[90%] md:w-[50%] mx-auto rounded-xl cursor-pointer"
                 />
             </div>

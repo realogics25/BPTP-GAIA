@@ -12,7 +12,6 @@ import Features from "./components/features";
 import ContactUs from "./components/contact-us";
 import { HeroVideoDialogVideo } from "./components/Hero-video-dialog";
 
-// ✅ ContactForm Component
 export const ContactForm = ({
   onClose,
   setFormSubmitted,
@@ -57,8 +56,8 @@ export const ContactForm = ({
         });
 
         const link = document.createElement("a");
-        link.href = "/Amstoria Verti-Greens Brochure.pdf";
-        link.download = "Amstoria Verti-Greens Brochure.pdf";
+        link.href = "/BPTP GAIA RESIDENCES @ AMSTORIA 102.pdf";
+        link.download = "BPTP GAIA RESIDENCES @ AMSTORIA 102.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

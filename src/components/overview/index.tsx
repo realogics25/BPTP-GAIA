@@ -106,14 +106,14 @@ export default Overview;
 
 const OverviewImageSection = () => {
     const [selectedImage, setSelectedImage] = useState<string>(
-        "https://img.staticmb.com/mbimages/project/Photo_h470_w1080/2025/03/13/Project-Photo-7-BPTP-Amstoria-Verti-Greens-Gurgaon-5429103_443_800_470_1080.jpg"
+        "https://www.bptpgaia.com/Bowling-Alley.jpg"
     );
 
     const thumbnails = [
-        "https://img.staticmb.com/mbimages/project/Photo_h470_w1080/2025/03/13/Project-Photo-7-BPTP-Amstoria-Verti-Greens-Gurgaon-5429103_443_800_470_1080.jpg",
-        "https://img.staticmb.com/mbimages/project/Photo_h470_w1080/2025/03/13/Project-Photo-8-BPTP-Amstoria-Verti-Greens-Gurgaon-5429103_585_1200_470_1080.jpg",
-        "https://img.staticmb.com/mbimages/project/Photo_h470_w1080/2025/03/13/Project-Photo-6-BPTP-Amstoria-Verti-Greens-Gurgaon-5429103_890_1200_470_1080.jpg",
-        "https://img.staticmb.com/mbimages/project/Photo_h470_w1080/2025/03/13/Project-Photo-7-BPTP-Amstoria-Verti-Greens-Gurgaon-5429103_443_800_470_1080.jpg",
+        "https://www.bptpgaia.com/Bowling-Alley.jpg",
+        "https://www.bptpgaia.com/Co-working.jpg",
+        "https://www.bptpgaia.com/Library-Lounge.jpg",
+        "https://www.bptpgaia.com/Yoga-Sky.jpg",
     ];
 
     return (
@@ -167,21 +167,21 @@ const AboutProject = () => {
                         <p className="text-lg font-medium text-textPrimary">Total Towers</p>
                         <BsBuilding size={20} className="text-textPrimary" />
                     </div>
-                    <p className="text-textSecondary text-md">5</p>
+                    <p className="text-textSecondary text-md">3</p>
                 </div>
                 <div className="border p-4 border-gray-400 rounded-lg">
                     <div className="flex justify-between mb-1 items-center">
                         <p className="text-lg font-medium text-textPrimary">Total Units</p>
                         <p><RiUserCommunityLine size={20} className="text-textPrimary" /></p>
                     </div>
-                    <p className="text-textSecondary text-md">1200 Approx</p>
+                    <p className="text-textSecondary text-md">531 Approx</p>
                 </div>
                 <div className="border p-4 border-gray-400 rounded-lg">
                     <div className="flex justify-between mb-1 items-center">
                         <p className="text-lg font-medium text-textPrimary">RERA Registration Certificate No.</p>
                         <IoNewspaperOutline size={20} className="text-textPrimary" />
                     </div>
-                    <p className="text-textSecondary text-md break-words">RC/REP/HARERA/GGM/910/642/2025/13</p>
+                    <p className="text-textSecondary text-md break-words">RC/REP/HARERA/GGM/963/695/2025/66</p>
                 </div>
             </div>
         </div>
@@ -204,14 +204,14 @@ const FloorPlan = ({
                         className="w-[30%] h-full border rounded-xl cursor-pointer"
                         onClick={() => {
                             setShowPopup(true)
-                            openImage("https://cms.bptp.com/wp-content/uploads/2025/02/4.jpg")
+                            openImage("/type-1.jpg")
                         }}
                     >
-                        <img src="https://cms.bptp.com/wp-content/uploads/2025/02/4.jpg" alt="" className="w-full h-full object-cover rounded-xl" />
+                        <img src="/type-1.jpg" alt="" className="w-full h-full object-cover rounded-xl" />
                     </div>
                     <div>
-                        <p className="text-lg text-textSecondary font-medium">Super Area</p>
-                        <p className="text-xl text-textPrimary font-semibold">1652 Sq.ft | 2 BHK</p>
+                        <p className="text-lg text-textSecondary font-medium">Type 1, Corner Unit</p>
+                        <p className="text-xl text-textPrimary font-semibold">1689.74 Sq.ft | 3 BHK</p>
                     </div>
                 </div>
                 <div className="w-full h-28 bg-white rounded-xl p-3 flex items-start gap-3 border border-gray-400">
@@ -219,14 +219,29 @@ const FloorPlan = ({
                         className="w-[30%] h-full border rounded-xl cursor-pointer"
                         onClick={() => {
                             setShowPopup(true)
-                            openImage("https://cms.bptp.com/wp-content/uploads/2025/02/1.jpg")
+                            openImage("/type-2.jpg")
                         }}
                     >
-                        <img src="https://cms.bptp.com/wp-content/uploads/2025/02/1.jpg" alt="" className="w-full h-full object-cover rounded-xl" />
+                        <img src="/type-2.jpg" alt="" className="w-full h-full object-cover rounded-xl" />
+                    </div>
+                    <div>
+                        <p className="text-lg text-textSecondary font-medium">Type 2</p>
+                        <p className="text-xl text-textPrimary font-semibold">1621.67 Sq.ft | 3 BHK</p>
+                    </div>
+                </div>
+                {/* <div className="w-full h-28 bg-white rounded-xl p-3 flex items-start gap-3 border border-gray-400">
+                    <div
+                        className="w-[30%] h-full border rounded-xl cursor-pointer"
+                        onClick={() => {
+                            setShowPopup(true)
+                            openImage("https://cms.bptp.com/wp-content/uploads/2025/02/2.jpg")
+                        }}
+                    >
+                        <img src="https://cms.bptp.com/wp-content/uploads/2025/02/2.jpg" alt="" className="w-full h-full object-cover rounded-xl" />
                     </div>
                     <div>
                         <p className="text-lg text-textSecondary font-medium">Super Area</p>
-                        <p className="text-xl text-textPrimary font-semibold">2460 Sq.ft | 3 BHK</p>
+                        <p className="text-xl text-textPrimary font-semibold">2050 Sq.ft | 3 BHK</p>
                     </div>
                 </div>
                 <div className="w-full h-28 bg-white rounded-xl p-3 flex items-start gap-3 border border-gray-400">
@@ -243,7 +258,7 @@ const FloorPlan = ({
                         <p className="text-lg text-textSecondary font-medium">Super Area</p>
                         <p className="text-xl text-textPrimary font-semibold">2050 Sq.ft | 3 BHK</p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
