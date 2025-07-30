@@ -41,10 +41,10 @@ const HeroSection = ({
             </div>
             <p className='text-center text-xl font-medium'>SECTOR 102, DWARKA EXPRESSWAY, GURUGRAM</p>
             <div className='border text-center inline-block my-2 p-3 rounded-md'>
-              <p className='text-center text-xl font-medium'>Easy Payment Plan <span className='text-yellow-600'>30:30:40</span></p>
+              <p className='text-center text-xl font-medium'>Easy <span className='text-yellow-600'>30:30:40</span>Payment Plan</p>
             </div>
             <div className='border text-center inline-block my-2 p-3 rounded-md'>
-              <p className='text-center text-xl font-medium'>Pay 30% Now & No Payments Till <span className='text-yellow-600'>3.5 Years</span></p>
+              <p className='text-center text-xl font-medium'>Pay Now 30% & No Payments <span className='text-yellow-600'>Till 3.5 Years</span></p>
             </div>
             <div className='flex justify-center items-center gap-4 mt-2'>
               <div

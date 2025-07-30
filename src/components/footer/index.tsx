@@ -74,7 +74,7 @@ export const Footer = () => {
                     </div>
                     <div className="space-y-2 text-sm">
                         <p className="text-base font-bold tracking-wide text-white">
-                            Connect with us
+                            Connect with Realogics
                         </p>
                         <div className="flex">
                             <p className="mr-1 text-white">Phone:</p>
@@ -107,7 +107,7 @@ export const Footer = () => {
                                 title="Our address"
                                 className="transition-colors duration-300 text-white/80"
                             >
-                                <span className='text-white'>Address : </span>
+                                <span className='text-white'>Our Office : </span>
                                 Realogics Housing and Investments A1/230 4th,floor, Sushant Lok-2, Sector-55, Golf Course Road, Gurugram.
                             </a>
                         </div>
