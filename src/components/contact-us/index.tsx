@@ -3,6 +3,32 @@ import Swal from "sweetalert2";
 import { ContactForm } from "../../App";
 import { MdCancel } from "react-icons/md";
 
+declare global {
+    interface Window {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        gtag: (...args: any[]) => void;
+    }
+}
+
+const gtag_report_conversion = (url?: string) => {
+    const callback = () => {
+        if (typeof url !== "undefined") {
+            window.location.href = url;
+        }
+    };
+
+    if (typeof window.gtag !== "undefined") {
+        window.gtag("event", "conversion", {
+            send_to: "AW-17377232068/4HRoCLjkzvQaEMSJjt5A",
+            value: 1.0,
+            currency: "INR",
+            event_callback: callback,
+        });
+    }
+
+    return false;
+};
+
 const ContactUs = ({
     formSubmitted,
     setFormSubmitted,
@@ -155,6 +181,7 @@ const ContactUs = ({
 
                             <div className="text-center">
                                 <button
+                                onClick={() => gtag_report_conversion()}
                                     disabled={loading}
                                     type="submit"
                                     className={`w-full ${loading ? 'bg-black/35' : 'bg-black'} text-white px-6 py-3 font-xl rounded-md`}>

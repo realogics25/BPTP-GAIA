@@ -12,6 +12,34 @@ import Features from "./components/features";
 import ContactUs from "./components/contact-us";
 import { HeroVideoDialogVideo } from "./components/Hero-video-dialog";
 
+
+declare global {
+  interface Window {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    gtag: (...args: any[]) => void;
+  }
+}
+
+// ✅ Google Ads conversion function
+const gtag_report_conversion = (url?: string) => {
+  const callback = () => {
+    if (typeof url !== "undefined") {
+      window.location.href = url;
+    }
+  };
+
+  if (typeof window.gtag !== "undefined") {
+    window.gtag("event", "conversion", {
+      send_to: "AW-17377232068/4HRoCLjkzvQaEMSJjt5A",
+      value: 1.0,
+      currency: "INR",
+      event_callback: callback,
+    });
+  }
+
+  return false;
+};
+
 export const ContactForm = ({
   onClose,
   setFormSubmitted,
@@ -89,7 +117,7 @@ export const ContactForm = ({
         <select name="apartment" required className="w-full border border-gray-400 rounded-md py-2 px-3">
           <option value="">Select apartment type</option>
           <option value="2 BHK 1652 Sq. Ft.">Type-1 | 1689.74 Sq.ft | 3 BHK</option>
-          <option value="3 BHK 2460 Sq. Ft.">Type-2 | 1621.67 Sq.ft | 3 BHK</option>          
+          <option value="3 BHK 2460 Sq. Ft.">Type-2 | 1621.67 Sq.ft | 3 BHK</option>
         </select>
       </div>
       <div>
@@ -125,6 +153,7 @@ export const ContactForm = ({
         className="w-full border border-gray-400 rounded-md py-2 px-3"
       />
       <button
+        onClick={() => gtag_report_conversion()}
         disabled={loading}
         type="submit"
         className={`w-full ${loading ? "bg-black/35" : "bg-black"} text-white px-6 py-3 rounded-md`}
@@ -137,6 +166,7 @@ export const ContactForm = ({
 
 // ✅ AppContent handles shared state
 const AppContent = () => {
+
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [showPopup, setShowPopup] = useState(true);
   const popupRef = useRef<HTMLDivElement>(null);
